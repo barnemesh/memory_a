@@ -50,12 +50,15 @@ public class OptionController : MonoBehaviour
             return;
         }
 
-        if (GameManager.OptionCount != 1)
+        switch (GameManager.OptionCount)
         {
-            return;
+            case > 1:
+                return;
+            case 1:
+                GameManager.OptionCount--;
+                return;
         }
 
-        GameManager.MainText = "Last Call"; // TODO: last call text
         GameManager.ActivateEnd();
         gameObject.SetActive(false);
     }
