@@ -53,7 +53,7 @@ public class OptionController : MonoBehaviour
         switch (GameManager.OptionCount)
         {
             case > 1:
-                return;
+                return;  // TODO: if timer is not over, lower timer, return
             case 1:
                 GameManager.OptionCount--;
                 return;

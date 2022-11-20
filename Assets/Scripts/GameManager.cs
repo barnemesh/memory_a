@@ -24,10 +24,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     [HideInInspector]
-    private string waitText = "Here they are.";
+    private string waitText = "Here they are.";  // TODO: remove this option, only 1 finish
 
     [SerializeField]
-    [HideInInspector]
     private PassiveTimer waitTimer;
 
 
